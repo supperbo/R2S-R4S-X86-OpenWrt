@@ -1,18 +1,10 @@
 name: R2S-OpenWrt
 
-on: 
-  release:
-    types: [published]
-
-  push:
-    branches: 
-      - master
-
+on:
   schedule:
-    - cron: 0 8 * * 5
-  
-  #watch:
-  #  types: [started]
+    - cron: 5 9 * * 6
+  watch:
+    types: started
 
 jobs:
   
